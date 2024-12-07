@@ -29,6 +29,7 @@ class TrainingPipelineParams:
     feature_params: FeatureParams
     train_params: TrainingParams
     input_data_path: str = field(default="../data/raw/sampled_train_5m.csv")
+    use_mlflow: bool = field(default=True)
 
 
 TrainingPipelineParamsSchema = class_schema(TrainingPipelineParams)
